@@ -1,22 +1,342 @@
-.App {
-  text-align: center;
-}
 
+h1,h2,h3,p,span{
+  font-family: 'Trebuchet MS';
+}
 .App-logo {
-  height: 40vmin;
+  margin: 5vh 0 1vh 0;
+  height: 50vmin;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+
+.Random-background {
+  background: lightblue url("../src/assets/bg.jpg") no-repeat fixed center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
+
+
+.App-link {
+  color: #e30000;
+  border: black;
+}
+
+
+.loader {
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid #e30000; 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.custom-a{
+  font-weight:bold;
+  text-transform: uppercase;
+  color: #e30000!important;
+  padding-left: 10%;
+  font-size: 1.2rem;
+  text-decoration: none!important;
+}
+
+.custom-a-bis{
+  font-size: 1.5rem;
+  border-radius: 15px;
+  color: #ffffff!important;
+  background-color: black;
+  padding: 1%;
+  margin-left: 3vw;
+  text-decoration: none!important;
+}
+
+.custom-p{
+  padding-top: 10px;
+    font-size: 3rem;
+}
+
+.pokemon{
+  width: 100%;
+}
+
+.aleatoire1{
+  font-size: 1.5rem;
+  border-radius: 15px;
+  color: #ffffff!important;
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 29%, rgba(252,176,69,1) 69%, rgba(81,253,46,1) 100%);  padding: 1%;
+  margin-left: 3vw;
+  margin-top: 12vh!important;
+  cursor: pointer;
+}
+.aleatoire1 a {
+  font-weight:bold;
+  text-transform: uppercase;
+  color: #ffffff!important;
+  text-decoration: none!important;
+}
+.rond{
+  margin-top: 1.5vh!important;
+
+  border: 2.5px solid black;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  
+}
+.aleatoire2{
+  font-size: 1.5rem;
+  border-radius: 15px;
+  color: black!important;
+  background-color: rgb(0, 0, 0);
+  padding: 1%;
+  margin-left: 3vw;
+  margin-top: 1.5vh!important;
+  cursor: pointer;
+}
+.aleatoire2 a {
+  font-weight:bold;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255)!important;
+  text-decoration: none!important;
+}
+
+
+
+
+.bot{
+  font-size: 2rem;
+  margin : 0 0 5vh 0;
+}
+label {
+  font-size: 1.5rem;
+  margin-right: 2vw;
+}
+
+.custom-link{
+  color:red;
+  margin: 10px 10px 10px 10px;
+  padding : 10px;
+}
+
+.centered{
+  display: flex;
+  justify-content: center;
+}
+.centered p{
+  font-size: 1.6rem;
+  padding: 0 0.7rem 0 0.7rem;
+}
+.details {
+  border: 5px;
+  border-color: burlywood;
+  font-family: 'Trebuchet MS';
+  padding: 3vh 0 3vh 0;
+  color : black;
+  align-items: center;
+}
+.details h1{
+  
+  text-align: center;
+  font: bold;
+  text-transform: uppercase;
+  font-size:2em; 
+  margin: .1em .5em;
+  border-radius: .4em;
+}
+.details h2{
+ 
+  text-align: center;
+  font: bold;
+  text-transform: uppercase;
+  font-size:1.4em; 
+  margin: .1em .5em;
+  border-radius: .4em;
+}
+
+
+/*
+Isolate
+*/
+.isolate{
+  margin : 5rem;
+}
+
+/*
+SCROLL BAR
+*/
+
+
+::-webkit-scrollbar-track
+{
+	border: 1px solid black;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #000000;	
+}
+
+/*
+SCROLL
+*/
+.scrolltop{
+  position: fixed;
+    top: 6vh;
+    right: 5vw;
+    z-index: 1;
+   
+    cursor:pointer;
+}
+.scrolltop img{
+  width: 5vw;
+}
+.scrolldown img{
+  margin-top: 15vh;
+  cursor:pointer;
+  width: 5vw;
+}
+
+
+.scrollincon{
+  width: 1vw;
+}
+
+
+/*
+TYPE 
+*/
+.type {
+    font-size: 20px;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    width: 6em;
+    text-align: center;
+    display: inline-block;
+    border: .1em solid transparent;
+    padding: .1em .2em .2em;
+    margin: .1em .5em;
+    border-radius: .4em;
+    
+}
+
+.type span { 
+  text-transform: uppercase;
+  font-size:.8em; 
+  color: white;
+  text-shadow: 0em 0em .2em black; 
+}
+
+.normal     { background-color: #a8a878!important; border-top-color: lighten(#a8a878,15%); border-bottom-color: darken(#a8a878,15%); }
+.fire       { background-color: #b44945!important; border-top-color: lighten(#b44945,15%); border-bottom-color: darken(#b44945,15%); }
+.fighting   { background-color: #c03028!important; border-top-color: lighten(#c03028,15%); border-bottom-color: darken(#c03028,15%); }
+.water      { background-color: #6890f0!important; border-top-color: lighten(#6890f0,15%); border-bottom-color: darken(#6890f0,15%); }
+.poison     { background-color: #a040a0!important; border-top-color: lighten(#a040a0,15%); border-bottom-color: darken(#a040a0,15%); }
+.electric   { background-color: #f8d030!important; border-top-color: lighten(#f8d030,15%); border-bottom-color: darken(#f8d030,15%); }
+.ground     { background-color: #e0c068!important; border-top-color: lighten(#e0c068,15%); border-bottom-color: darken(#e0c068,15%); }
+.grass      { background-color: #78c850!important; border-top-color: lighten(#78c850,15%); border-bottom-color: darken(#78c850,15%); }
+.flying     { background-color: #a890f0!important; border-top-color: lighten(#a890f0,15%); border-bottom-color: darken(#a890f0,15%); }
+.ice        { background-color: #98d8d8!important; border-top-color: lighten(#98d8d8,15%); border-bottom-color: darken(#98d8d8,15%); }
+.bug        { background-color: #a8b820!important; border-top-color: lighten(#a8b820,15%); border-bottom-color: darken(#a8b820,15%); }
+.psychic    { background-color: #f85888!important; border-top-color: lighten(#f85888,15%); border-bottom-color: darken(#f85888,15%); }
+.rock       { background-color: #b8a038!important; border-top-color: lighten(#b8a038,15%); border-bottom-color: darken(#b8a038,15%); }
+.dragon     { background-color: #7038f8!important; border-top-color: lighten(#7038f8,15%); border-bottom-color: darken(#7038f8,15%); }
+.ghost      { background-color: #705898!important; border-top-color: lighten(#705898,15%); border-bottom-color: darken(#705898,15%); }
+.dark       { background-color: #705848!important; border-top-color: lighten(#705848,15%); border-bottom-color: darken(#705848,15%); }
+.steel      { background-color: #b8b8d0!important; border-top-color: lighten(#b8b8d0,15%); border-bottom-color: darken(#b8b8d0,15%); }
+.fairy      { background-color: #ffb7fa!important; border-top-color: lighten(#ffb7fa,15%); border-bottom-color: darken(#ffb7fa,15%); }
+
+
+
+/*
+ERREUR
+*/
+
+.erreur{
+  padding: 20vh 0 10vh 0;
+  font-size: 10vh;
+
+}
+
+/*
+CARD details
+*/
+.carddetails {
+  margin: 0 2vw 0 2vw;
+  border-radius: 1rem!important;
+  width: 25vw!important;  
+}
+.carddetailsbis {
+  margin: 0 2vw 0 2vw;
+  border-radius: 1rem!important;
+}
+
+/*
+progress bar
+*/
+.progress{
+  margin : 3vh 0 3vh 0;
+  height: 1.6rem!important;
+}
+.progress-bar{
+  background-color: #cf0707;
+}
+
+
+.info{
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+
+/* 
+responsive
+*/
+@media only screen and (max-width: 1300px) {
+  .clockdiv, .scrolltop {
+    display: none;
+  }
+  .carddetails{
+    width: 50vw!important;
+    height: 100%;
+    margin-bottom: 10vh;
+  }
+  .App-header {
+    height: 200vh;
+    
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  
+  .carddetails{
+    width: 70vw!important;
+  }
+}
+

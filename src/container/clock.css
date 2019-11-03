@@ -1,0 +1,18 @@
+.clock{
+    width: 5rem;
+    
+    margin-left: 10px;
+
+}
+
+.clockdiv{
+    top: 6vh;
+    position: fixed;
+    left: 6vh;
+    z-index: 1;
+   
+}
+
+.bckgrd{
+    background-color: #282c34;
+}
